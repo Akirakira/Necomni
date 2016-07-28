@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBE5D8"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mqttsample.MainActivity"
+     >
+    <Button
+        android:id="@+id/buttonMC"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background = "#556270"
+        android:textSize = "12sp"
+        android:textColor ="#CBE5D8"
+        android:layout_marginTop="70dp"
+        android:text="MQTTconnect!" />
+    <Button
+        android:id="@+id/buttonCl"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonR"
+        android:layout_alignRight="@+id/buttonR"
+        android:layout_below="@+id/buttonR"
+        android:background = "#556270"
+        android:textSize = "12sp"
+        android:textColor ="#CBE5D8"
+        android:layout_marginTop="10dp"
+        android:text="disConnect!" />
+    <ListView
+        android:id="@+id/listViewDe"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="35dp"
+        android:textSize = "12sp"
+        android:layout_alignTop="@+id/buttonMC"
+        android:layout_toRightOf="@+id/buttonCl" >
+    </ListView>
+    <Button
+        android:id="@+id/buttonR"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background = "#556270"
+        android:textSize = "12sp"
+        android:layout_marginTop="10dp"
+        android:textColor ="#CBE5D8"
+        android:layout_alignLeft="@+id/buttonG"
+        android:layout_below="@+id/buttonG"
+        android:text="cat Read!" />
+    <Button
+        android:id="@+id/button1M"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background = "#556270"
+        android:textSize = "12sp"
+        android:textColor ="#CBE5D8"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/buttonMC"
+        android:layout_below="@+id/buttonMC"
+        android:text="MQTTpublish!" />
+    <Button
+        android:id="@+id/buttonB"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background = "#556270"
+        android:textSize = "12sp"
+        android:textColor ="#CBE5D8"
+        android:layout_marginTop="50dp"
+        android:layout_alignLeft="@+id/button1M"
+        android:layout_alignRight="@+id/button1M"
+        android:layout_below="@+id/button1M"
+        android:text="scanCAT!" />
+    <Button
+        android:id="@+id/buttonG"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background = "#556270"
+        android:textSize = "12sp"
+        android:textColor ="#CBE5D8"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/buttonB"
+        android:layout_below="@+id/buttonB"
+        android:text="connectCAT!" />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@+id/listViewDe"
+        android:src="@drawable/neco" />
+    <TextView
+        android:id="@+id/textViewA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="18sp" />
+</RelativeLayout>
